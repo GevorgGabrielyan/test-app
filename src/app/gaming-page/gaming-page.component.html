@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="speed-buttons">
+    <button class="primary-btn" (click)="decrementSpeed()">Decrement speed</button>
+    <span>{{ speed }}</span>
+    <button class="primary-btn" (click)="incrementSpeed()">Increment speed</button>
+  </div>
+  <div class="actions">
+    <span>{{ info }}</span>
+    <button class="finish" (click)="getWay()">Finish</button>
+    <button class="new-game" (click)="save()">New Game</button>
+    <button class="exit" routerLink="" (click)="decrementSpeed()">Exit</button>
+  </div>
+</div>
+<div class="football">
+  <img [appMove]="speed" #bull src="../../assets/images/ball.png" alt="bull">
+</div>

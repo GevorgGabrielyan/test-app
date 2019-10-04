@@ -1,14 +1,18 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { MaxResultPageComponent } from './max-result-page/max-result-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MaxResultPageComponent
   ],
   imports: [
-    BrowserModule
+    AppRoutingModule,
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

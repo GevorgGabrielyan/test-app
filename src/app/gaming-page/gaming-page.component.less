@@ -1,0 +1,72 @@
+@10: 10px;
+
+.football {
+  box-shadow: 0 0 17px @10 black;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 5%;
+  background-image: url("../../assets/images/soccer.jpg");
+  width: 90%;
+  height: ~"calc(100vh - 140px)";
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  img {
+    position: absolute;
+    transform: rotateZ(0deg);
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  button {
+    padding: @10 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+
+  .actions {
+    button {
+      margin: 0 20px;
+    }
+
+    .new-game,
+    .finish {
+      background: linear-gradient(to right, #003399 0%, #66ccff 100%);
+    }
+
+    .exit {
+      background: linear-gradient(to left, #990000 0%, #ff3300 100%);
+    }
+  }
+
+  .speed-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+
+    span {
+      color: red;
+      font-size: 20px;
+    }
+  }
+}
